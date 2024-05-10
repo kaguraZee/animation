@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 20px 20px;
+            background-color: aqua;
+            border-color: 1px solid grey;
+            border-radius: 10px;
+            transform: skew(20deg,20deg);
+            animation-timing-function: linear;
+            animation-duration: 3s;
+            
+            transition-property: transform,background-color;
+            transition-timing-function: ease-in-out;
+            animation-name: move;
+        }
+        @keyframes move{
+            0%{
+                transform: translateX(500px)rotate(20deg) ;
+            }
+            50%{
+                transform: rotate(360deg);
+            }
+                100%{
+                    transform: translateX(500px)rotate(20deg) ;
+           
+        }
+        }
+           
+        button:hover{
+            
+            background-color: orange;
+        }
+        div{
+            margin:40vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is animation</h2>
+    <div class="animation">
+        <button>Animation</button>
+    </div>
+</body>
+</html>
